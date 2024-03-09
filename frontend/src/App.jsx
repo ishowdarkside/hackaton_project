@@ -6,6 +6,7 @@ import OnboardingContext from "./context/OnboardingContext";
 import { Toaster } from "react-hot-toast";
 import Login from "./pages/Login/Login";
 import Protect from "./components/Protect/Protect";
+import Score from "./pages/Score/Score";
 
 function App() {
   return (
@@ -25,6 +26,15 @@ function App() {
           element={
             <Protect>
               <Dashboard />
+            </Protect>
+          }
+        />
+
+        <Route
+          path="/score"
+          element={
+            <Protect>
+              <Score />
             </Protect>
           }
         />
