@@ -5,6 +5,7 @@ import newbieIcon from "../../assets/newbie.png";
 import beginerIcon from "../../assets/beginner.png";
 import intermediateIcon from "../../assets/intermediate.png";
 import advancedIcon from "../../assets/advanced.png";
+import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
 export default function ChooseLevel({ image, navTitle }) {
   const { setPage } = useHomeContext();
@@ -26,6 +27,9 @@ export default function ChooseLevel({ image, navTitle }) {
             <img src={advancedIcon} alt="" /> Advanced
           </li>
         </ul>
+        <PrimaryButton onClick={(prevState) => prevState + 1}>
+          Continue
+        </PrimaryButton>
       </div>
     </HomePageLayout>
   );
