@@ -1,6 +1,7 @@
 @import "../../styles/variables.scss";
 
 .homePageLayout {
+  padding-bottom: 2rem;
   img {
     width: 15.2rem;
   }
@@ -22,6 +23,6 @@
   }
 
   .childrenWrapper {
-    margin-top: 230px;
+    margin-top: 200px;
   }
 }

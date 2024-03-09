@@ -16,10 +16,12 @@
   animation: fadeIn 1s ease;
 
   h2 {
+    max-width: 320px;
     color: $bp-brand-primary;
-    font-size: 28px;
-    line-height: 36.4px;
+    font-size: 36px;
+    line-height: 1.1;
     margin-bottom: 12px;
+    text-align: center;
     font-weight: 400;
     font-family: $bp-font-primary;
   }
