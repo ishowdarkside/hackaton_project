@@ -6,9 +6,11 @@ import beginerIcon from "../../assets/beginner.png";
 import intermediateIcon from "../../assets/intermediate.png";
 import advancedIcon from "../../assets/advanced.png";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
+import { useNavigate } from "react-router";
 
 export default function ChooseLevel({ image, navTitle }) {
   const { setPage, studyLevel, setStudyLevel } = useOnboardingContext();
+  const navigate = useNavigate();
   return (
     <HomePageLayout image={image} navTitle={navTitle}>
       <div className={styles.chooseLevel}>
@@ -41,7 +43,7 @@ export default function ChooseLevel({ image, navTitle }) {
             <img src={advancedIcon} alt="" /> Advanced
           </li>
         </ul>
-        <PrimaryButton onClick={(prevState) => prevState + 1}>
+        <PrimaryButton onClick={() => navigate("/dashboard")}>
           Continue
         </PrimaryButton>
       </div>

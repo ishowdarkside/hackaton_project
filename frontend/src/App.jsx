@@ -6,6 +6,7 @@ import OnboardingContext from "./context/OnboardingContext";
 import { Toaster } from "react-hot-toast";
 import Login from "./pages/Login/Login";
 import Protect from "./components/Protect/Protect";
+import Course from "./pages/Course/Course";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             </Protect>
           }
         />
+        <Route path="/course/:courseName" element={<Course />} />
       </Routes>
       <Toaster />
     </>

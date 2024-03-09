@@ -4,6 +4,6 @@ const { prompt } = require(path.join(__dirname, "..", "controllers", "openai"));
 const { protect } = require(path.join(__dirname, "..", "controllers", "auth"));
 const router = express.Router();
 
-router.post("/prompt-ai", protect, prompt);
+router.post("/prompt-ai", prompt);
 
 module.exports = router;

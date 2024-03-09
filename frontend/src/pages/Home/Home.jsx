@@ -27,10 +27,6 @@ export default function Home() {
       {page === 2 && (
         <ChooseLevel image={impressedLogo} navTitle="Level of knowledge" />
       )}
-      {page === 3 && <Signup image={ideaLogo} navTitle="Fill the form" />}
-      {page === 4 && (
-        <AccountCreated image={excitedLogo} navTitle="Account created" />
-      )}
     </div>
   );
 }
