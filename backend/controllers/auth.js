@@ -50,3 +50,17 @@ exports.login = catchAsync(async (req, res, next) => {
     });
   });
 });
+
+exports.protect = catchAsync(async (req, res, next) => {
+  const token = req.headers.authorization?.split(" ")?.at(1);
+
+  if (!token) return next(new AppError(401, "Unauthorized. Please login"));
+
+  const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  if (!decoded || !decoded.role)
+    return next(new AppError(401, "Unauthorized, please login"));
+
+  const me = await User.findById(decoded.id);
+  req.user = me;
+  next();
+});

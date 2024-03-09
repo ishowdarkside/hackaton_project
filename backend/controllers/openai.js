@@ -8,7 +8,7 @@ const catchAsync = require(path.join(
 const AppError = require(path.join(__dirname, "..", "utilities", "AppError"));
 
 exports.prompt = catchAsync(async (req, res, next) => {
-  const { question } = req.body;
+  const { input: question } = req.body;
   if (!question)
     return next(
       new AppError(400, "Before prompting AI, please input your question")
@@ -30,6 +30,6 @@ exports.prompt = catchAsync(async (req, res, next) => {
 
   res.status(200).json({
     status: "success",
-    response: response.choices.messages,
+    response: response.choices.at(0).message.content,
   });
 });
