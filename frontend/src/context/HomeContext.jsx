@@ -4,16 +4,9 @@ export const HomeContext = createContext(null);
 
 export default function HomeContextProvider({ children }) {
   const [userData, setUserData] = useState({
-    name: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
     role: "starter",
   });
-  const [page, setPage] = useState(1);
-
-  console.log(userData);
-  console.log(page);
+  const [page, setPage] = useState(0);
 
   return (
     <HomeContext.Provider value={{ userData, setUserData, page, setPage }}>

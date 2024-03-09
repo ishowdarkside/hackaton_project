@@ -22,7 +22,7 @@ exports.signup = catchAsync(async (req, res, next) => {
 
   res.status(201).json({
     status: "success",
-    user,
+    message: "Signed up successfully!",
     token,
   });
 });
@@ -34,7 +34,9 @@ exports.login = catchAsync(async (req, res, next) => {
   const user = await User.findOne({ email });
   if (!user) return next(new AppError(401, "Incorrect email/password"));
   bcrypt.compare(password, user.password, (err, result) => {
-    if (err) return next(new AppError(401, "Incorrect email/passowrd"));
+    console.log(result);
+    if (err || !result)
+      return next(new AppError(401, "Incorrect email/passowrd"));
     const token = jwt.sign(
       { id: user.id, role: user.role },
       process.env.JWT_SECRET,

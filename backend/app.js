@@ -5,9 +5,11 @@ const errorController = require("./controllers/errorController");
 const openaiRouter = require("./routes/openai");
 const AuthRouter = require("./routes/auth");
 const app = express();
+const cors = require("cors");
 
 //openai routing
 app.use(express.json());
+app.use(cors());
 app.use("/api/ai", openaiRouter);
 app.use("/api/auth", AuthRouter);
 

@@ -1,0 +1,100 @@
+@import "../../styles/variables.scss";
+.decorElement {
+  background-color: $bp-brand-primary;
+  border-radius: 150%;
+  width: 120%;
+  position: absolute;
+  top: -15rem;
+  left: -5rem;
+  height: 40rem;
+}
+
+.homeNav {
+  position: relative;
+  z-index: 2;
+  ul {
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+    .navText {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .backBtn {
+      background-color: #fff;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      padding: 1.5rem;
+      font-size: 20px;
+    }
+
+    .infoIcon {
+      font-size: 25px;
+      color: #fff;
+    }
+  }
+}
+
+.backBtn {
+  width: 40px;
+  height: 40px;
+}
+
+@import "../../styles/variables.scss";
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeIn 1s ease;
+  margin-top: 250px;
+
+  input {
+    background-color: #fafafa;
+    border-radius: 12px;
+    color: #646464;
+    padding: 20px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+  }
+}
+
+.errorDiv {
+  text-align: center;
+
+  &:first-child {
+    color: #e70606;
+  }
+}
+
+.errorDecor {
+  background-color: #e70606;
+}
+
+.brainImage {
+  max-width: 170px;
+  position: absolute;
+  z-index: 44;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+}
