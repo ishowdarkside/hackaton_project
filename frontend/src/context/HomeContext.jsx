@@ -8,7 +8,7 @@ export default function HomeContextProvider({ children }) {
     email: "",
     password: "",
     confirmPassword: "",
-    role: "",
+    role: "starter",
   });
   const [page, setPage] = useState(1);
 

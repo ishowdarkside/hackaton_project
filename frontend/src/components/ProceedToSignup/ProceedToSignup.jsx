@@ -5,10 +5,10 @@ import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import TransparentButton from "../TransparentButton/TransparentButton";
 import { useHomeContext } from "../../context/HomeContext";
 
-export default function ProceedToSignup({ image }) {
+export default function ProceedToSignup({ image, navTitle }) {
   const { setPage } = useHomeContext();
   return (
-    <HomePageLayout image={image}>
+    <HomePageLayout image={image} navTitle={navTitle}>
       <div className={styles.proceedToSignup}>
         <h2>That’s a great role to start from!</h2>
         <p>

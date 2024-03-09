@@ -1,6 +1,6 @@
 @import "../../styles/variables.scss";
 
-@keyframes fadeIn {
+@keyframes fadeInFromBottom {
   from {
     opacity: 0;
     transform: translateY(50px);
@@ -11,9 +11,13 @@
   }
 }
 
-.accountCreated {
-  text-align: center;
-  animation: fadeIn 1s ease;
+.splashScreen {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInFromBottom 1s ease;
 
   h2 {
     color: $bp-brand-primary;
@@ -24,13 +28,7 @@
   }
 
   p {
-    font-size: 16px;
-    padding: 0 6rem;
-    line-height: 22.4px;
-
-    a {
-      color: $bp-brand-primary;
-      text-decoration: none;
-    }
+    font-size: 18px;
+    color: $bp-text-darksecondary;
   }
 }

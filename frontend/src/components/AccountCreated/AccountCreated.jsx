@@ -4,9 +4,9 @@ import styles from "./AccountCreated.module.scss";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import TransparentButton from "../TransparentButton/TransparentButton";
 
-export default function AccountCreated({ image }) {
+export default function AccountCreated({ image, navTitle }) {
   return (
-    <HomePageLayout image={image}>
+    <HomePageLayout image={image} navTitle={navTitle}>
       <div className={styles.accountCreated}>
         <h2>You’ve created account successfully</h2>
         <p>

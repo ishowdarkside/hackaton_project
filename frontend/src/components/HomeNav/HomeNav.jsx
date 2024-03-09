@@ -3,7 +3,7 @@ import { IoChevronBackOutline } from "react-icons/io5";
 import styles from "./HomeNav.module.scss";
 import { useHomeContext } from "../../context/HomeContext";
 
-export default function HomeNav() {
+export default function HomeNav({ navTitle }) {
   const { setPage } = useHomeContext();
   return (
     <nav className={styles.homeNav}>
@@ -14,7 +14,7 @@ export default function HomeNav() {
         >
           <IoChevronBackOutline />
         </li>
-        <li className={styles.navText}>Choose plan</li>
+        <li className={styles.navText}>{navTitle}</li>
         <li className={styles.infoIcon}>
           <IoMdInformationCircleOutline />
         </li>
