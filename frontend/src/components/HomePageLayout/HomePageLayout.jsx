@@ -7,7 +7,7 @@ export default function HomePageLayout({ children, image }) {
       <div className={styles.elipseDecor}></div>
       <HomeNav />
       <img src={image} alt="Brainpulse" className={styles.brainImg} />
-      {children}
+      <div className={styles.childrenWrapper}>{children}</div>
     </section>
   );
 }
