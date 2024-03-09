@@ -13,6 +13,14 @@ export default function Lessons() {
         quantity="2"
         precentage={100}
       />
+
+      <Lesson
+        icon={introductionIcon}
+        title="Lesson 1 - Introduction"
+        level="easy"
+        quantity="2"
+        precentage={100}
+      />
       <PrimaryButton
         fixedStyle={{
           position: "fixed",
