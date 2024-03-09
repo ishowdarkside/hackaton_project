@@ -7,22 +7,22 @@ import intermediateIcon from "../../assets/intermediate.png";
 import advancedIcon from "../../assets/advanced.png";
 
 export default function ChooseLevel({ image, navTitle }) {
-  const { setPage } = useOnboardingContext();
+  const { setPage, studyLevel, setStudyLevel } = useOnboardingContext();
   return (
     <HomePageLayout image={image} navTitle={navTitle}>
       <div className={styles.chooseLevel}>
         <h2>Where are you starting from?</h2>
         <ul>
-          <li>
+          <li onClick={() => setStudyLevel("newbie")}>
             <img src={newbieIcon} alt="" /> Newbie
           </li>
-          <li>
+          <li onClick={() => setStudyLevel("beginner")}>
             <img src={beginerIcon} alt="" /> Beginner
           </li>
-          <li>
+          <li onClick={() => setStudyLevel("intermediate")}>
             <img src={intermediateIcon} alt="" /> Intermediate
           </li>
-          <li>
+          <li onClick={() => setStudyLevel("advanced")}>
             <img src={advancedIcon} alt="" /> Advanced
           </li>
         </ul>

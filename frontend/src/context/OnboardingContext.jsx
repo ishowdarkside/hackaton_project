@@ -5,6 +5,7 @@ export const OnboardingContext = createContext(null);
 export default function OnboardingContextProvider({ children }) {
   const [page, setPage] = useState(0);
   const [selectedField, setSelectedField] = useState(null);
+  const [studyLevel, setStudyLevel] = useState(null);
 
   return (
     <OnboardingContext.Provider
@@ -13,6 +14,8 @@ export default function OnboardingContextProvider({ children }) {
         setPage,
         selectedField,
         setSelectedField,
+        studyLevel,
+        setStudyLevel,
       }}
     >
       {children}
