@@ -1,19 +1,11 @@
 import styles from "./Subject.module.scss";
-import { MdLockOpen } from "react-icons/md";
 import mathIcon from "../../../assets/math_icon.png";
+import unlock from "../../../assets/unlock_with_pro.png";
 
 export default function Subject({ access }) {
   return (
     <div className={styles.subject}>
-      {!access && (
-        <div className={styles.lock}>
-          <div className={styles.overlay}></div>
-          <div className={styles.content}>
-            <MdLockOpen />
-            <h3>Unlock with Pro</h3>
-          </div>
-        </div>
-      )}
+      {!access && <img src={unlock} className={styles.unlockImage} />}
       <img src={mathIcon} alt="Math" />
       <h2>Math</h2>
       <div className={styles.details}>

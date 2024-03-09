@@ -1,11 +1,12 @@
 import styles from "./MobileNav.module.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { GrHomeRounded } from "react-icons/gr";
 import { LuBookmarkMinus } from "react-icons/lu";
 import { HiOutlineStar } from "react-icons/hi";
 import { GrMenu } from "react-icons/gr";
 
 export default function MobileNav() {
+  const location = useLocation();
   return (
     <nav className={styles.mobileNav}>
       <ul>
