@@ -1,8 +1,15 @@
 import styles from "./Lesson.module.scss";
 
-export default function Lesson({ icon, title, level, quantity, precentage }) {
+export default function Lesson({
+  icon,
+  title,
+  level,
+  quantity,
+  precentage,
+  onClick,
+}) {
   return (
-    <div className={styles.lesson}>
+    <div className={styles.lesson} onClick={onClick}>
       <img src={icon} />
       <h2>{title}</h2>
       <div className={styles.lessonDetails}>

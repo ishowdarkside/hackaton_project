@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import AISearch from "../Dashboard/AISearch/AISearch";
 import { IoIosArrowBack } from "react-icons/io";
@@ -6,12 +6,19 @@ import styles from "./Course.module.scss";
 import IT from "../../assets/computerscience.png";
 import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
 import { IoIosArrowForward } from "react-icons/io";
+import CourseSection from "../CourseSection/CourseSection";
 
 export default function Course() {
   const { courseName } = useParams();
   const [isPlaying, setIsPlaying] = useState(false);
   const [activeSection, setActiveSetion] = useState(null);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!activeSection) return;
+    setIsPlaying(true);
+  }, [activeSection]);
+
   return (
     <section className={styles.sectionBody}>
       {!isPlaying && (
@@ -89,6 +96,8 @@ export default function Course() {
           </div>
         </>
       )}
+
+      {isPlaying && <CourseSection activeSection={activeSection} />}
     </section>
   );
 }

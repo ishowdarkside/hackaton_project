@@ -2,15 +2,18 @@ import Lesson from "./Lesson/Lesson";
 import styles from "./Lessons.module.scss";
 import introductionIcon from "../../../assets/introduction_icon.png";
 import PrimaryButton from "../../../components/PrimaryButton/PrimaryButton";
+import { useNavigate } from "react-router";
 
 export default function Lessons() {
+  const navigate = useNavigate();
   return (
     <div className={styles.lessons}>
       <Lesson
         icon={introductionIcon}
-        title="Lesson 1 - Introduction"
+        title="Lesson 2 - Java basics"
         level="easy"
-        quantity="2"
+        quantity="4"
+        onClick={() => navigate("/course/java")}
         precentage={100}
       />
 
