@@ -6,7 +6,6 @@ const catchAsync = require(path.join(
   "catchAsync"
 ));
 const AppError = require(path.join(__dirname, "..", "utilities", "AppError"));
-const OpenAI = require("openai");
 
 exports.prompt = catchAsync(async (req, res, next) => {
   const { question } = req.body;

@@ -1,16 +1,23 @@
 @import "../../styles/variables.scss";
 
 .homePageLayout {
-  background-color: $bp-brand-primary;
-  position: relative;
-  height: 32.9rem;
-  width: 100%;
-
   img {
     width: 15.2rem;
+  }
+
+  .elipseDecor {
+    background-color: $bp-brand-primary;
+    border-radius: 150%;
+    width: 120%;
     position: absolute;
-    bottom: -8rem;
-    left: 25%;
-    right: 25%;
+    top: -15rem;
+    left: -5rem;
+    height: 40rem;
+  }
+
+  .brainImg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

@@ -1,3 +1,5 @@
+@import "../styles/mixins.scss";
+
 *,
 *::before,
 *::after {
@@ -9,10 +11,18 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px
+
+  @include responsive("tab-land") {
+    font-size: 56.25%;
+  }
+
+  @include responsive("tab-port") {
+    font-size: 50%;
+  }
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 1.5;
   padding: 0 2.4rem;
   font-family: "Arial", sans-serif;

@@ -1,4 +1,6 @@
 .homeNav {
+  position: relative;
+  z-index: 2;
   ul {
     padding: 4rem 2rem;
     display: flex;
@@ -7,7 +9,7 @@
     list-style: none;
 
     .navText {
-      font-size: 2rem;
+      font-size: 20px;
       color: #fff;
     }
 
@@ -20,12 +22,17 @@
       justify-content: center;
       border-radius: 50%;
       padding: 1.5rem;
-      font-size: 2rem;
+      font-size: 20px;
     }
 
     .infoIcon {
-      font-size: 2.5rem;
+      font-size: 25px;
       color: #fff;
     }
   }
+}
+
+.backBtn {
+  width: 40px;
+  height: 40px;
 }
