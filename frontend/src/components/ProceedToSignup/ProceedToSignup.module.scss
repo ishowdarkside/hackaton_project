@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+
+.proceedToSignup {
+  text-align: center;
+  h2 {
+    font-family: $bp-font-primary;
+    font-size: 32px;
+    padding: 0 4rem;
+    line-height: 41.6px;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 0 6rem;
+    line-height: 22.4px;
+
+    a {
+      color: $bp-brand-primary;
+      text-decoration: none;
+    }
+  }
+}

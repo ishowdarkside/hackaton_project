@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+
+.accountCreated {
+  text-align: center;
+
+  h2 {
+    color: $bp-brand-primary;
+    font-size: 28px;
+    line-height: 36.4px;
+    font-weight: 400;
+    font-family: $bp-font-primary;
+  }
+  p {
+    font-size: 16px;
+    padding: 0 6rem;
+    line-height: 22.4px;
+
+    a {
+      color: $bp-brand-primary;
+      text-decoration: none;
+    }
+  }
+}
