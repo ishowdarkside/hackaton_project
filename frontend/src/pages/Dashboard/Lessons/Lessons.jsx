@@ -17,7 +17,6 @@ export default function Lessons() {
         fixedStyle={{
           position: "fixed",
           bottom: "13rem",
-          padding: "2rem",
           width: "90%",
           padding: "16px 10px",
           borderRadius: "12px",

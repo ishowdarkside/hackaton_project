@@ -6,11 +6,8 @@ import OnboardingContext from "./context/OnboardingContext";
 import { Toaster } from "react-hot-toast";
 import Login from "./pages/Login/Login";
 import Protect from "./components/Protect/Protect";
-<<<<<<< HEAD
 import Course from "./pages/Course/Course";
-=======
 import Score from "./pages/Score/Score";
->>>>>>> 23ce09ba6237896e595b5631fb59f19fcdc2acb9
 
 function App() {
   return (
@@ -33,9 +30,7 @@ function App() {
             </Protect>
           }
         />
-<<<<<<< HEAD
         <Route path="/course/:courseName" element={<Course />} />
-=======
 
         <Route
           path="/score"
@@ -45,7 +40,6 @@ function App() {
             </Protect>
           }
         />
->>>>>>> 23ce09ba6237896e595b5631fb59f19fcdc2acb9
       </Routes>
       <Toaster />
     </>
