@@ -5,6 +5,7 @@ import "./styles/App.scss";
 import HomeContextProvider from "./context/HomeContext";
 import { Toaster } from "react-hot-toast";
 import Login from "./pages/Login/Login";
+import Protect from "./components/Protect/Protect";
 
 function App() {
   return (
@@ -19,7 +20,14 @@ function App() {
           }
         />
         <Route path="/auth/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route
+          path="/dashboard"
+          element={
+            <Protect>
+              <Dashboard />
+            </Protect>
+          }
+        />
       </Routes>
       <Toaster />
     </>
