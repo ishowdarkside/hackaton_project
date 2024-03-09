@@ -15,7 +15,6 @@ import ideaLogo from "../../assets/logo/Idea.png";
 import impressedLogo from "../../assets/logo/Impressed.png";
 import searchingLogo from "../../assets/logo/Searching.png";
 import SplashScreen from "../../components/SplashScreen/SplashScreen";
-import ChooseStudy from "../../components/Plan/ChooseStudy";
 
 export default function Home() {
   const { page } = useOnboardingContext();
@@ -25,7 +24,7 @@ export default function Home() {
       {page === 0 && <SplashScreen image={logo} />}
       {page === 1 && <ChooseStudy image={excitedLogo} navTitle="Choose plan" />}
       {page === 2 && (
-        <ProceedToSignup image={impressedLogo} navTitle="Plan: Starter" />
+        <ChooseLevel image={impressedLogo} navTitle="Level of knowledge" />
       )}
       {page === 3 && <Signup image={ideaLogo} navTitle="Fill the form" />}
       {page === 4 && (
