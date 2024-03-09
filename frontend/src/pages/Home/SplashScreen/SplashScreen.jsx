@@ -18,8 +18,6 @@ export default function SplashScreen() {
             </div>
           </div>
         </div>
-        <PrimaryButton>Get started</PrimaryButton>
-        <Link className={styles.link}> Already have account?</Link>
       </div>
     </section>
   );
