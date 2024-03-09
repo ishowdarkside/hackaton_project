@@ -1,0 +1,31 @@
+.homeNav {
+  ul {
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+    .navText {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    li a {
+      text-decoration: none;
+      background-color: #fff;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      padding: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .infoIcon {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+  }
+}
