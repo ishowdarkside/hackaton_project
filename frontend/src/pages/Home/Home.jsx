@@ -1,9 +1,10 @@
 // SCSS
 import styles from "./Home.module.scss";
 import Signup from "../../components/Signup/Signup";
-import ProceedToSignup from "../../components/ProceedToSignup/ProceedToSignup";
+import ChooseLevel from "../../components/ChooseLevel/ChooseLevel";
 import AccountCreated from "../../components/AccountCreated/AccountCreated";
 import { useOnboardingContext } from "../../context/OnboardingContext";
+import ChooseStudy from "../../components/Plan/ChooseStudy";
 //images
 import logo from "../../assets/logo/logo.png";
 import excitedLogo from "../../assets/logo/Excited.png";
