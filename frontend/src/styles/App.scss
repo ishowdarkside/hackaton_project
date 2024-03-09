@@ -28,3 +28,7 @@ body {
   font-family: "Arial", sans-serif;
   color: #000;
 }
+
+input:focus {
+  outline: none;
+}

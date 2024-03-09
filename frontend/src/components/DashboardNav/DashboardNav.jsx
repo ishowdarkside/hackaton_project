@@ -8,7 +8,7 @@ export default function DashboardNav() {
       <span className={styles.profile}>
         <img src={brainPulseLogoText} />
       </span>
-      <img src={logoIcon} alt="Brainpulse" />
+      <img src={logoIcon} alt="Brainpulse" className={styles.profileIcon} />
     </nav>
   );
 }

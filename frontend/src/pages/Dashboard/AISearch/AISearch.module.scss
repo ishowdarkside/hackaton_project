@@ -1,0 +1,27 @@
+@import "../../../styles/variables.scss";
+
+.aiSearch {
+  position: relative;
+  width: 100%;
+
+  .icon {
+    color: orange;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 3rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 16px 16px 16px 50px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    &:focus {
+      border: 1px solid $bp-brand-primary;
+      background-color: #fef9f5;
+      transition: 0.4s;
+    }
+  }
+}
