@@ -26,6 +26,9 @@ const UserSchema = new mongoose.Schema({
     default: "user",
     enum: ["student", "pro", "teacher", "organization", "user"],
   },
+  streak: {
+    type: String,
+  },
 });
 
 UserSchema.pre("save", async function (next) {

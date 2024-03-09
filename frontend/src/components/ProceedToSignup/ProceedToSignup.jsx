@@ -3,7 +3,7 @@ import HomePageLayout from "../HomePageLayout/HomePageLayout";
 import styles from "./ProceedToSignup.module.scss";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import TransparentButton from "../TransparentButton/TransparentButton";
-import { useHomeContext } from "../../context/HomeContext";
+import { useOnboardingContext } from "../../context/OnboardingContext";
 
 export default function ProceedToSignup({ image, navTitle }) {
   const { setPage } = useHomeContext();

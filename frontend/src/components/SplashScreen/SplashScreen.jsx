@@ -1,12 +1,12 @@
 // SCSS
 import { useNavigate } from "react-router";
-import { useHomeContext } from "../../context/HomeContext";
+import { useOnboardingContext } from "../../context/OnboardingContext";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import TransparentButton from "../TransparentButton/TransparentButton";
 import styles from "./SplashScreen.module.scss";
 
 export default function SplashScreen({ image }) {
-  const { setPage } = useHomeContext();
+  const { setPage } = useOnboardingContext();
   const navigate = useNavigate();
 
   return (
