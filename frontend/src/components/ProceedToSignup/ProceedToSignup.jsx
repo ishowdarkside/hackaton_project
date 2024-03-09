@@ -6,7 +6,7 @@ import TransparentButton from "../TransparentButton/TransparentButton";
 import { useOnboardingContext } from "../../context/OnboardingContext";
 
 export default function ProceedToSignup({ image, navTitle }) {
-  const { setPage } = useHomeContext();
+  const { setPage } = useOnboardingContext();
   return (
     <HomePageLayout image={image} navTitle={navTitle}>
       <div className={styles.proceedToSignup}>
