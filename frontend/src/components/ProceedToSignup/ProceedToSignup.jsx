@@ -3,8 +3,10 @@ import HomePageLayout from "../HomePageLayout/HomePageLayout";
 import styles from "./ProceedToSignup.module.scss";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import TransparentButton from "../TransparentButton/TransparentButton";
+import { useHomeContext } from "../../context/HomeContext";
 
 export default function ProceedToSignup({ image }) {
+  const { setPage } = useHomeContext();
   return (
     <HomePageLayout image={image}>
       <div className={styles.proceedToSignup}>
@@ -13,8 +15,14 @@ export default function ProceedToSignup({ image }) {
           If you want to access all subjects and other features{" "}
           <Link to="/">Upgrade to Pro</Link>.
         </p>
-        <PrimaryButton>Go To Signup</PrimaryButton>
-        <TransparentButton>Change plan</TransparentButton>
+        <PrimaryButton onClick={() => setPage((prevState) => prevState + 1)}>
+          Go To Signup
+        </PrimaryButton>
+        <TransparentButton
+          onClick={() => setPage((prevState) => prevState - 1)}
+        >
+          Change plan
+        </TransparentButton>
       </div>
     </HomePageLayout>
   );
