@@ -1,10 +1,10 @@
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { IoChevronBackOutline } from "react-icons/io5";
 import styles from "./HomeNav.module.scss";
-import { useHomeContext } from "../../context/HomeContext";
+import { useOnboardingContext } from "../../context/OnboardingContext";
 
 export default function HomeNav({ navTitle }) {
-  const { setPage } = useHomeContext();
+  const { setPage } = useOnboardingContext();
   return (
     <nav className={styles.homeNav}>
       <ul>
