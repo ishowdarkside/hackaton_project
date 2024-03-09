@@ -17,11 +17,43 @@
     padding: 16px 16px 16px 50px;
     border: 1px solid #ddd;
     border-radius: 12px;
-
+    background-color: #fafafa;
     &:focus {
       border: 1px solid $bp-brand-primary;
       background-color: #fef9f5;
       transition: 0.4s;
     }
   }
+}
+
+.promptResults {
+  background-color: #ffff;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 21.799999237060547px 0px #00000012;
+  border: 1px solid #dfdfdf;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+  span {
+    font-weight: 600;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+}
+
+.inputBoxWrap {
+  position: relative;
 }
