@@ -1,0 +1,50 @@
+@import "../../../../styles/variables.scss";
+
+.lesson {
+  border: 1px solid #23ae31;
+  width: 100%;
+  border-radius: 16px;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: "Helvetica Neue";
+
+  h2 {
+    font-weight: 400;
+    font-size: 22px;
+    color: $bp-text-dark;
+  }
+
+  .lessonDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    span {
+      color: $bp-text-darksecondary;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+
+  .progressBar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .precentage {
+      font-size: 12px;
+      font-weight: 400;
+      color: #474747;
+    }
+    .bar {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: 4px solid #23ae31;
+    }
+  }
+}

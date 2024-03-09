@@ -10,7 +10,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; //1rem = 10px
+  font-size: 62.5%;
 
   @include responsive("tab-land") {
     font-size: 56.25%;
@@ -29,6 +29,7 @@ body {
   color: #000;
 }
 
-input:focus {
+input:focus,
+select:focus {
   outline: none;
 }

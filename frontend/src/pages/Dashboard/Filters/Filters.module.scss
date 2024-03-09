@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  gap: 1.5rem;
+  padding: 2rem 0;
+
+  select,
+  button {
+    padding: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: inherit;
+    color: $bp-text-darkplaceholder;
+    width: 100%;
+  }
+}

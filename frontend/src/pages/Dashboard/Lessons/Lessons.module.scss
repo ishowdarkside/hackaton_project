@@ -1,0 +1,11 @@
+@import "../../../styles/variables.scss";
+
+.lessons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  text-align: center;
+  padding-bottom: 23rem;
+}
